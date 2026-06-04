@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/images/image.png">
+        <title>SkillSEC</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="sub-title" style="color:blue;">Welcome To SkillSEC</h1>
+        </header>
+        <main>
+            <div class="auth-container">
+                <div class="tabs">
+                    <button type="button" class="tab active" onclick="showForm('signin')">Sign In</button>
+                    <button type="button" class="tab"onclick="showForm('signup')">Sign Up</button>
+                </div>
+                <div id="signin" class="form-box">
+                    <h2>Welcome Back</h2>
+                    <form>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password"placeholder="Password" required>
+                        <button class="submit-btn" type="submit"> Login </button>
+                    </form>
+                </div>
+                <div id="signup" class="form-box hidden">
+                    <h2>Create Account</h2>
+                    <form onsubmit="validate(event)">
+                        <input type="text" placeholder="Full Name" id="name" required>
+                        <input type="email" placeholder="Email" id="email" required>
+                        <input type="password" placeholder="Password" id="pass1" required>
+                        <input type="password" placeholder="Confirm Password" id="pass2" required>
+                        <select required>
+                            <option value=""> Select Course </option>
+                            <option> Full Stack </option>
+                            <option> Data Science </option>
+                            <option> MERN Stack </option>
+                            <option> DevOps </option>
+                        </select>
+                        <button class="submit-btn" type="submit" onclick="validate(event)"> Register</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="admin">
+            <h5>Are you admin ? <a href class="highlight">Login</a></h5>
+        </footer>
+    </body>
+    <script src="./scripts/script.js"></script>
+</html>
