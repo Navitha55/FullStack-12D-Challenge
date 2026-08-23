@@ -1,7 +1,20 @@
-# fullstack-12d-challenge
-🚀 12 days of Full Stack development with daily projects, code implementations, learning notes, and live demos.
-## 🚀 Completed Projects
+# 🚀 FullStack-12D-Challenge
 
-| Day   | Project                                        | Description                                                                                                                                                                     |
-| ----- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Day 1 | **SkillSEC - Responsive Multimedia Form Page** | Educational platform UI with Sign In/Sign Up, multimedia integration, responsive design, forms, iframe, audio, video, Flexbox, Grid, CSS positioning and JavaScript validation. |
+A 12-day journey to practice **Full Stack Development** through small, practical projects.
+
+## 📌 Projects
+
+| Day   | Project                                   | Technologies          |
+| ----- | ----------------------------------------- | --------------------- |
+| Day 1 | **SkillSEC** - Responsive Multimedia Form | HTML, CSS, JavaScript |
+| Day 2 | **SkillCalc** - Interactive Calculator    | HTML, CSS, JavaScript |
+| Day 3 | **User Dashboard** - API Integration      | HTML, CSS, JavaScript |
+
+More projects coming soon, including **React** and **Django** projects.
+
+## 🌐 Live Demo
+
+[View Projects](https://navitha55.github.io/FullStack-12D-Challenge/)
+
+
+⭐ Building one project every day and learning along the way.

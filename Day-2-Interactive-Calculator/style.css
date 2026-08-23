@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 3rem;
+    color: #5c2ef1;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.out-box {
+    width: 360px;
+    background: #2b2b2b;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+}
+
+.input-box {
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 2rem;
+    color: #1e293b;
+    outline: none;
+}
+
+.button-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 70px);
+    gap: 8px;
+}
+
+.button-box button {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .25s, box-shadow .25s, background-color .25s;
+}
+
+.button-box button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+
+.button-box button:active {
+    transform: scale(.96);
+}
+
+
+.number {
+    background: #ffffff;
+    color: #1e293b;
+}
+
+
+.operator {
+    background: #4F46E5;
+    color: white;
+}
+
+
+.clear {
+    background: #ef4444;
+    color: white;
+}
+
+
+.equal {
+    background: #06B6D4;
+    color: white;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.add {
+    grid-row: span 2;
+}
+
+
+.equal {
+    grid-row: span 2;
+}
+
+
+.zero {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+
+    .heading {
+        font-size: 2.3rem;
+    }
+
+    .out-box {
+        width: 320px;
+    }
+
+    .button-box {
+        grid-template-rows: repeat(5, 60px);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .out-box {
+        width: 95%;
+        max-width: 360px;
+    }
+
+    .input-box {
+        height: 70px;
+        font-size: 1.6rem;
+    }
+
+    .button-box {
+        grid-template-rows: repeat(5, 55px);
+        gap: 6px;
+    }
+
+    .button-box button {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+
+    .heading {
+        font-size: 1.7rem;
+    }
+
+    .out-box {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .input-box {
+        height: 60px;
+        font-size: 1.4rem;
+    }
+
+    .button-box {
+        grid-template-rows: repeat(5, 50px);
+        gap: 5px;
+    }
+
+}
